@@ -22,5 +22,14 @@
             return FALSE;
         }
         
+        public function detail($id)
+        {
+            $query = $this->db->get_where($this->table, array('id'=>$id));
+            if($query->num_rows() > 0)
+            {
+                return $query->result_array();
+            }
+            return FALSE;
+        }
     }
 ?>

@@ -12,17 +12,19 @@
             
             $this->load->view('template/header');
             $this->load->view('template/static');
+            $this->load->view('template/menuleft');
             $this->load->view('about/about',$data);
             $this->load->view('template/footer');
         }    
         
-        public function update()
+        public function update($id)
         {
-            $data['query'] = $this->aboutmodel->select();
+            $data['query'] = $this->aboutmodel->detail($id);
             
             $this->load->view('template/header');
             $this->load->view('template/static');
-            //$this->load->view('about/about',$data);
+            $this->load->view('template/menuleft');
+            $this->load->view('about/update',$data);
             $this->load->view('template/footer');
         }
     }

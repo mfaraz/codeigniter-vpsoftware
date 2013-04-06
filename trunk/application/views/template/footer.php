@@ -1,3 +1,5 @@
+    <div class="fix"></div>
+</div>
 <!-- Footer -->
 <div id="footer">
 	<div class="wrapper">

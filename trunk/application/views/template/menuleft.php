@@ -1,4 +1,9 @@
-	<!-- Left navigation -->
+<!-- Content wrapper -->
+<div class="wrapper">
+    <div>
+       <a href="<?php echo base_url(); ?>" title=""><img src="<?php echo base_url(); ?>themes/images/loginLogo.png" alt="" /></a>
+</div>	
+<!-- Left navigation -->
     <div class="leftNav">
     	<ul id="menu">
             <li class="dash"><a href="#" title="" class="exp"><span>Thông tin</span></a>
